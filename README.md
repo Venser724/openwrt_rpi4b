@@ -107,21 +107,21 @@ Download *openwrt-.tar.gz*
    
    10. Copy and paste this to terminal "apk update && apk upgrade" to make sure all packages are up-to-date, wait untill all done and you'll get message lookong like so "OK: xx.xx MiB in xx packages"
    11. Enter Timezone data, for Russia/Moscow copy-paste folowing commands, hit ENTER
-```
+   ```
    uci set system.@system[0].zonename='Europe/Moscow'
    uci set system.@system[0].timezone='MSK-3'
    uci commit system
    /etc/init.d/system reload
-```
+   ```
    12. Ensure all is set and done. Copy and paste folowing command, hit ENTER
    ```
    date
    ``` 
    If all is good you'll see correct date and time
    13. Reboot router. Copy and paste following command, hit ENTER
-```
+   ```
    reboot
-```
+   ```
    14. After device boots up, restore USB Tethering connectivity mode
   ## Sharing Internet access over Wi-Fi network
   
